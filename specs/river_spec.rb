@@ -24,7 +24,7 @@ class RiverTest < MiniTest::Test
   end
 
   def test_remove_fish
-    @river.get_fish
+    @river.lose_fish
     assert_equal(4, @river.fish_count)
   end
 

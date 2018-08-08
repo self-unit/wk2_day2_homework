@@ -8,8 +8,9 @@ class River
     @fishes = fishes || []
   end
 
-  def get_fish
-    @fishes.pop
+  def lose_fish
+    @fishes.pop if @fishes.length > 0
+    return Fish.new("Magic Fish")
   end
 
   def fish_count

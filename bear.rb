@@ -9,7 +9,7 @@ attr_reader :name, :type
   end
 
   def eat_fish(river)
-    fish = river.get_fish
+    fish = river.lose_fish
     @stomach.push(fish)
   end
 
